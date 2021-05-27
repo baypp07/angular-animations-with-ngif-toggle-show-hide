@@ -1,0 +1,37 @@
+            <div class="text-section2">
+                <div class="text1">
+                    <div class="show-text-mobile-section2">
+                        <p> C’est un mélange de soleil, de bitume, de mode, de culture et de
+                            tout ce qui fait le monde d’aujourd’hui. C’est en regardant par la
+                            fenêtre et en se mêlant à la foule que nous puisons notre
+                            inspiration.
+                        </p>
+                        <p> Nous sommes une agence de conseil en stratégie digitale nouvelle
+                            génération, née d’un mélange de la culture urbaine, web et social
+                            media, dopée à la marque.
+                        </p>
+                        <div class="plus alt" (click)="toggleExpan()" [ngClass]="expan ? 'hide-plus' :'show-plus'" ></div>
+                    </div>
+                    <div *ngIf="expan == true" [@toggle]="expan == true">
+                        <p>
+                            Un crew de perturbateurs créatifs et audacieux qui veut redéfinir
+                            les lignes de votre business.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="text2"  *ngIf="expan == true"  [@toggle]="expan == true" >
+                    <p> Nous voulons aider nos clients à se connecter à la nouvelle génération,
+                        celle qui veut changer le monde et les façons de consommer, qui est
+                        hyper connectée mais qui bloque les publicités sur leur portable et qui
+                        est en recherche constante d’identification.
+                    </p>
+                    <p>Pour eux, nous construisons des écosystèmes de marque qui captent,
+                        impactant et se propagent. Nous créons de la disruption créative et la
+                        connectons à travers toute l’expérience consommateur pour permettre
+                        aux marques de sortir du lot et prospérer.
+                    </p>
+                </div>
+
+            </div>
